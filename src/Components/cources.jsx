@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './cource.css'
+import './Cource.css'
 import Images from './Images'
 
 const Cources = () => {
