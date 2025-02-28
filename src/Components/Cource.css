@@ -26,9 +26,16 @@ height: 70px;
     margin: 0px 10px 10px 10px;
 }
 .extra-detail-course{
-    display: flex;
-    font-size: 15px;
+   display: flex;
+   flex-direction: row;
+    font-size: 13px;
   
+}
+.cource-detial-info{
+    font-style: italic;
+    width: 500px;
+    text-align: justify;
+    padding-right: 10px;
 }
 .readmorebutton{
     background-color: rgb(56, 141, 168);
@@ -39,4 +46,12 @@ height: 70px;
     height: 40px;
     margin: 10px;
 
+}
+.whoweare{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.whoweare-data{
+    font-size: 13px;
+    text-align: justify;
 }
