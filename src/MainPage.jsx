@@ -34,11 +34,11 @@ const MainPage = () => {
       
         <div>
       <h2 className='text-warp text-center heading-text'>Welcome to <span className='upay'>Unperturb_Advancement</span> </h2>
-<p className='text-center para-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, explicabo!</p>
+<p className='text-center para-title'>Process of Man-Making</p>
     
     <div className='w-100 d-flex justify-content-evenly align-items-center '>
     <button className='btn reg-button'>Register</button>
-    <div>Watch video</div>
+    <div className='watch-video btn btn-outline-light' > <i className="fa-regular fa-circle-play " style={{color: "#74C0FC"}}></i>Watch video</div>
     </div>
     </div>
       </div>
@@ -59,7 +59,7 @@ const MainPage = () => {
             
           }}
         >
-          ↑
+         <i class="fa-solid fa-arrow-up fa-lg" style={{color: "#fafafa"}}></i>
         </button>
       )}
     </div>

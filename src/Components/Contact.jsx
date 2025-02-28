@@ -5,19 +5,19 @@ const Contact = () => {
     <div  className="d-flex flex-column justify-content-center align-items-center vh-100" >
 
       <h4 className='d-flex justify-content-center '>Contact</h4>
-      <p className='text-warp opacity-75 fs-6 text-center mb-5 '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, excepturi!
+      <p className='text-warp opacity-75 fs-6 text-center mb-5 '>Unperturb_Advancement Ganpati Nagar Godhani Road Zingabai Takli Nagpur 440030
       </p>
 
       <div className='contact-div'>
-        <div className='d-flex justify-content-center'>logo</div>
+        <div className='d-flex justify-content-center'><i  class="fa-solid fa-phone fa-2xl contact-logo" style={{color: "#74C0FC"}}></i></div>
         <h5 className='d-flex justify-content-center'>Call us</h5>
-        <p className='text-warp opacity-75 fs-6 text-center '>Lorem ipsum dolor, sit amet l?</p>
+        <p className='text-warp opacity-75 fs-6 text-center '>9356823789, 9011483130, 9834198170 </p>
       </div>
 
       <div className='contact-div'>
-        <div className='d-flex justify-content-center'>logo</div>
+        <div className='d-flex justify-content-center'><i  class="fa-solid fa-envelope fa-2xl contact-logo" style={{color: "#74C0FC"}}></i></div>
         <h5 className='d-flex justify-content-center'>E-mail</h5>
-        <p className='text-warp opacity-75 fs-6 text-center '>Lorem ipsum dolor, sit amet l?</p>
+        <p className='text-warp opacity-75 fs-6 text-center '>unperturbadvancement@gmail.com</p>
       </div>
 
       <div className='contact-div-map'>

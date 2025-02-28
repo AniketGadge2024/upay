@@ -6,7 +6,7 @@
   
 }
 .mainpage-div-title{
-    height: 640px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,15 @@ font-size: 20px;
 }
 .upay{
 color: rgb(56, 141, 168);
+font-size: 26px;
+
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  
 }
 .para-title{
-    font-size: 12px;
+    font-size: 15px;
     color: grey;
 }
 .reg-button{
@@ -35,6 +41,15 @@ color: rgb(56, 141, 168);
     justify-content: center;
     align-items: center;
    
+}
+.watch-video{
+    width: 135px;
+   height: 40px;
+  padding: 5px;
+  border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .scroll-button{
     width: 40px;
@@ -64,6 +79,7 @@ color: rgb(56, 141, 168);
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
+    padding-right: 10px;
    
 }
 .header-titile{
@@ -76,9 +92,13 @@ color: rgb(56, 141, 168);
     height: 38px;
     background: rgb(56, 141, 168);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{   
     margin-top: 50px;
     
 }
+
