@@ -25,6 +25,11 @@ height: 70px;
     background-color: red;
     margin: 0px 10px 10px 10px;
 }
+.click-course{
+    position: absolute;
+    font-size: 8px;
+}
+
 .extra-detail-course{
    display: flex;
    flex-direction: row;

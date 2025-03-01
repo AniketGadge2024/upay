@@ -1,0 +1,42 @@
+.pics-button{
+    background-color: rgb(56, 141, 168);
+    border-radius: 20px;
+color: white;
+font-weight: 600;
+-webkit-box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+}
+.pics-main{
+    padding: 10px;
+    background-color: rgba(182, 255, 231, 0.177);
+}
+.pics-sub{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+
+    -webkit-box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+    box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+}
+.img-pics{
+    width: 40%;
+    min-height: 100px;
+   margin: 10px;
+    border-radius: 20px;
+    
+    -webkit-box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+    box-shadow: 1px -4px 25px -16px rgba(0,0,0,0.75);
+}
+.img-pics:hover{
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}

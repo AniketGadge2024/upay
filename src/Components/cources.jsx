@@ -32,7 +32,9 @@ const Cources = () => {
       <button className='btn cource-detail-logo' onClick={toggleDetails}><i class="fa-regular fa-bookmark" style={{color: "#ffffff"}}></i></button>
       <div>
         <h2 className='cource-detail-title'>Bridge Course</h2>
-      <p className='cource-detail-para'>For students who need conceptual clarity and transition support between grades. (Ideal for 6th to 8th)</p>
+      <p className='cource-detail-para'>For students who need conceptual clarity and transition support between grades. (Ideal for 6th to 8th)
+      <br />  <span className='text-danger click-course'> ← click here for more info</span>
+      </p>
       </div>
     
      </div>
@@ -53,7 +55,9 @@ const Cources = () => {
       <button className='btn cource-detail-logo' onClick={toggleDetails2}><i class="fa-solid fa-book-open" style={{color: "#ffffff"}}></i></button>
       <div>
         <h2 className='cource-detail-title'>Foundation Cource</h2>
-      <p className='cource-detail-para'>Strengthens core subjects and builds a strong academic base for competitive exams. (Ideal for 9th & 10th)</p>
+      <p className='cource-detail-para'>Strengthens core subjects and builds a strong academic base for competitive exams. (Ideal for 9th & 10th)
+      <br />  <span className='text-danger click-course'> ← click here for more info</span>
+      </p>
       </div>
      </div>
      <div className='extra-detail-course text-justify' style={{
@@ -72,7 +76,9 @@ const Cources = () => {
       <button className='btn cource-detail-logo'onClick={toggleDetails3}><i class="fa-solid fa-user-graduate" style={{color: "#ffffff"}}></i></button>
       <div>
         <h2 className='cource-detail-title'>Pinnacle Course</h2>
-      <p className='cource-detail-para'>Intensive preparation for board exams and competitive entrance tests. (Ideal for 11th & 12th)</p>
+      <p className='cource-detail-para'>Intensive preparation for board exams and competitive entrance tests. (Ideal for 11th & 12th)
+      <br />  <span className='text-danger click-course'> ← click here for more info</span>
+      </p>
       </div>
      </div>
 
@@ -93,7 +99,9 @@ const Cources = () => {
       <p className='fs-7 opacity-75 '><strong>WHO WE ARE</strong> </p>
      <h3 className='fs-1 '>"Building Strong Foundations, Empowering Bright Futures!" 🚀</h3>
      
-     <p className='whoweare-data'>Unperturb Advancement Classes is committed to providing high-quality education for 6th to 12th-grade students (CBSE & State Board). We focus on concept clarity, problem-solving, and exam-oriented learning to help students excel. Our structured courses – Bridge, Foundation, and Pinnacle – cater to different academic needs, ensuring personalized attention and steady progress.</p>
+     <p className='whoweare-data'>Unperturb Advancement Classes is committed to providing high-quality education for 6th to 12th-grade students (CBSE & State Board). We focus on concept clarity, problem-solving, and exam-oriented learning to help students excel. Our structured courses – Bridge, Foundation, and Pinnacle – cater to different academic needs, ensuring personalized attention and steady progress.
+      
+     </p>
 
      <div className='fst-italic text-justify' style={{
       height: isExpanded ? "650px" : "0px", 
