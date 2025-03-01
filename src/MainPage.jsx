@@ -38,7 +38,7 @@ const MainPage = () => {
     
     <div className='w-100 d-flex justify-content-evenly align-items-center '>
     <button className='btn reg-button'>Register</button>
-    <div className='watch-video btn btn-outline-light' > <i className="fa-regular fa-circle-play " style={{color: "#74C0FC"}}></i>Watch video</div>
+    <div className='watch-video btn' > <i className="fa-regular fa-xl fa-circle-play " style={{color: "#74C0FC"}}></i>Watch video</div>
     </div>
     </div>
       </div>
