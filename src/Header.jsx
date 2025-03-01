@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
-
+import logo from './assets/img/logo.png'
 const Header = () => {
 const [visible , setVisible]=useState(false);
 const navigate = useNavigate();
@@ -9,7 +9,7 @@ const navigate = useNavigate();
    <div className='nav-bar-main'>
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid nav-bar-sub">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand logo-header" href="#">Unperturb_Advancement</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

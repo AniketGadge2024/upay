@@ -54,7 +54,7 @@ const Cources = () => {
      <div className='cource-div d-flex'>
       <button className='btn cource-detail-logo' onClick={toggleDetails2}><i class="fa-solid fa-book-open" style={{color: "#ffffff"}}></i></button>
       <div>
-        <h2 className='cource-detail-title'>Foundation Cource</h2>
+        <h2 className='cource-detail-title'>Foundation Course</h2>
       <p className='cource-detail-para'>Strengthens core subjects and builds a strong academic base for competitive exams. (Ideal for 9th & 10th)
       <br />  <span className='text-danger click-course'> ← click here for more info</span>
       </p>

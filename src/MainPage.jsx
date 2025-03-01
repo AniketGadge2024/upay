@@ -3,10 +3,10 @@ import Header from './Header'
 import Cources from './Components/cources'
 import Contact from './Components/Contact'
 import Staffandtest from './Components/staffandtest'
-
+import { useNavigate } from "react-router-dom";
 const MainPage = () => {
   const [isVisible, setIsVisible] = useState(false);
-  
+  const navigate = useNavigate();
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
@@ -38,7 +38,7 @@ const MainPage = () => {
     
     <div className='w-100 d-flex justify-content-evenly align-items-center '>
     <button className='btn reg-button'>Register</button>
-    <div className='watch-video btn' > <i className="fa-regular fa-xl fa-circle-play " style={{color: "#74C0FC"}}></i>Watch video</div>
+    <div className='watch-video btn' onClick={()=>navigate('./Pics')} > <i class="fa-solid fa-circle-play fa-lg" style={{color: "#74C0FC"}}></i>Watch video</div>
     </div>
     </div>
       </div>
