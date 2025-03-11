@@ -6,6 +6,8 @@ import './App.css';
 import Contact from './Components/Contact';
 import Pics from './Components/Pics';
 import Error from './Components/error';
+import Registration from './Components/RegistraionForm/Registration';
+
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
             <Route path='/contact' element={<Contact />} />
             <Route path='/pics' element={<Pics />} />
             <Route path='*' element={<Error />} />
+            <Route path='/Registration' element={<Registration></Registration>} />
           </Routes>
         </Router>
       </div>

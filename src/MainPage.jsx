@@ -37,7 +37,7 @@ const MainPage = () => {
 <p className='text-center para-title'>Process of Man-Making</p>
     
     <div className='w-100 d-flex justify-content-evenly align-items-center '>
-    <button className='btn reg-button'>Register</button>
+    <button className='btn reg-button' onClick={()=>navigate('/Registration')}>Register</button>
     <div className='watch-video btn' onClick={()=>navigate('./Pics')} > <i class="fa-solid fa-circle-play fa-lg" style={{color: "#74C0FC"}}></i>Watch video</div>
     </div>
     </div>
