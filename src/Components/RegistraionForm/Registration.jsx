@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './RegistrationForm.css'
+import { useNavigate } from 'react-router-dom'
 const Registration = () => {
+
+  const [expanded, setExpanded] = useState(false);
+ const navigate = useNavigate();
 
     function Submit(event){
         const formEle=document.querySelector('form')
@@ -17,25 +21,28 @@ const Registration = () => {
 const submitHandler =(event)=>{
 Submit(event)
 
-alert('Form Submitted')
+navigate('/Review')
 }
 
+const Ruleshandler =()=>{
+setExpanded(!expanded)
+}
 
   return (
     <div className='reg-main-body'>
       <h5 className='text-center reg-body-title'>Admission Form</h5>
       <form className='form' onSubmit={submitHandler}>
 
-     <h5 className='section-title'>Student Details</h5> <hr />
+     <h5 className='section-title'>Student Details <i class="fa-solid fa-graduation-cap" style={{color: "#74C0FC"}}></i></h5> <hr />
 
         <div className='reg-input-fields'>
        <label className='input-label' htmlFor="Name">Full Name of Student</label>
-       <input name='Name' className='form-control input-registration' type="text" />
+       <input name='Name' className='form-control input-registration' type="text" required />
        </div>
 
         <div className='reg-input-fields'>
        <label className='input-label' htmlFor="StudentMobile">Student Mobile Number</label>
-       <input name='StudentMobile' className='form-control input-registration' type="number" />
+       <input name='StudentMobile' className='form-control input-registration' type="number" required/>
        </div>
 
         <div className='reg-input-fields'>
@@ -58,7 +65,7 @@ alert('Form Submitted')
 
        <div className='reg-input-fields'>       
        <label className='input-label' htmlFor="ClassApplying">Class Applying For</label>
-       <select className='form-control' name="ClassApplying">
+       <select className='form-control' name="ClassApplying" required>
        <option value="Not Selected">Select Class</option>
         <option value="6th">6th</option>
         <option value="7th">7th</option>
@@ -97,7 +104,7 @@ alert('Form Submitted')
        </div>
 
 
-      <hr /> <h5 className='section-title'>Parent/Guardian Information</h5> <hr />
+      <hr /> <h5 className='section-title'>Parent/Guardian Information <i class="fa-solid fa-house-user" style={{color: "#74C0FC"}}></i></h5> <hr />
 
     
        <div className='reg-input-fields'>
@@ -117,7 +124,7 @@ alert('Form Submitted')
 
        <div className='reg-input-fields'>
        <label htmlFor="PrimaryContact">Primary Contact Number (WhatsApp Number)</label>
-       <input name='PrimaryContact' className='form-control' type="number" />
+       <input name='PrimaryContact' className='form-control' type="number" required/>
        </div>
 
        <div className='reg-input-fields'>
@@ -127,7 +134,7 @@ alert('Form Submitted')
 
        <div className='reg-input-fields '>
        <label htmlFor="ResidentialAddress">Residential Address</label>
-       <input name='ResidentialAddress' className='form-control' type="text" />
+       <input name='ResidentialAddress' className='form-control' type="text" required />
        </div>
 
        <div className='reg-input-fields'>
@@ -162,27 +169,78 @@ alert('Form Submitted')
 
 <div className='reg-input-fields'>
 <label htmlFor="Favoritesubjects">What are your favorite subjects and why?</label>
-<input name='Favoritesubjects' className='form-control' type="text" />
+<input name='Favoritesubjects' className='form-control' type="text" required/>
 </div>
 
 <div className='reg-input-fields'>
 <label htmlFor="Careergoals">What are your academic and career goals?</label>
-<input name='Careergoals' className='form-control' type="text" />
+<input name='Careergoals' className='form-control' type="text" required/>
 </div>
 
 <div className='reg-input-fields'>
 <label htmlFor="Extracurricularinterests">What are your hobbies and extracurricular interests?</label>
-<input name='Extracurricularinterests' className='form-control' type="text" />
+<input name='Extracurricularinterests' className='form-control' type="text" required/>
 </div>
 
 <div className='reg-input-fields'>
 <label htmlFor="Whyjoin">Why do you want to join Unperturb Advancement Institute?</label>
-<input name='Whyjoin' className='form-control' type="text" />
+<input name='Whyjoin' className='form-control' type="text" required/>
 </div>
 
+<div className={`rulesregulation ${expanded? 'collapsed':'expanded'}`} >
 
-<input name='ProfilePhoto' type="file" />
-<input name='Signiture' type="file" />
+<hr />
+<h6 className='text-center'>Rules & Regulations</h6>
+
+<a onClick={Ruleshandler} className='rulesbutton'>{expanded?'Show Less ⬆️':'Show More ⬇️'}</a>
+<br />
+<div className='rules-div-details'>
+  <h6 className='rules-div-details-title'>General Conduct</h6>
+  <span className='rules-div-details-para'>1. Students must maintain discipline and respect towards teachers, staff, and fellow
+     students. <br />
+
+2. The use of abusive language, violence, or misconduct will lead to disciplinary
+     action. <br />
+
+3. Punctuality is mandatory. Latecomers may not be allowed to attend the class.</span>
+</div>
+
+<div className='rules-div-details'>
+  <h6 className='rules-div-details-title'>Academic Guidelines</h6>
+  <span className='rules-div-details-para'>1. must attend at least 80% of classes to be eligible for exams and assessments.. <br />
+
+2. Completion of assignments, projects, and homework is compulsory. <br />
+
+3. Any kind of cheating or malpractice during exams will result in strict action.</span>
+</div>
+
+<div className='rules-div-details'>
+  <h6 className='rules-div-details-title'>Disciplinary Actions</h6>
+  <span className='rules-div-details-para'>1.Any student found violating rules repeatedly may face suspension or expulsion. <br />
+
+2.The  institute’s decision in disciplinary matters will be final and binding.
+</span>
+</div>
+
+<div className='rules-div-details'>
+  <h6 className='rules-div-details-title'>Academic Guidelines</h6>
+  <span className='rules-div-details-para'>1. must attend at least 80% of classes to be eligible for exams and assessments.. <br />
+
+2. Completion of assignments, projects, and homework is compulsory. <br />
+
+3. Any kind of cheating or malpractice during exams will result in strict action.</span>
+</div>
+</div>
+
+<hr />
+<div className='declaraition-div'>
+<h6 className='rules-div-details-title'>Declaration & Consent </h6>
+<span className='rules-div-details-para'> I, hereby declare that all the information provided in this form is true and accurate. I agree to abide by the rules and regulations of Unperturb Advancement Institute. </span>
+<div className='d-flex mt-4 mb-2'>
+<input type="checkbox" required/> <span className='rules-div-details-para'> <strong>I agree to the above declaration</strong></span>  
+</div>
+</div>
+<hr />
 
 <input className='btn btn-success w-100' type="submit" />
 

@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import Pics from './Components/Pics';
 import Error from './Components/error';
 import Registration from './Components/RegistraionForm/Registration';
+import RegisReview from './Components/RegistraionForm/RegisReview';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route path='/pics' element={<Pics />} />
             <Route path='*' element={<Error />} />
             <Route path='/Registration' element={<Registration></Registration>} />
+            <Route path='/Review' element={<RegisReview></RegisReview>} />
           </Routes>
         </Router>
       </div>
