@@ -9,17 +9,22 @@ const Registration = () => {
         console.log('Submitted')
         
         const formData = new FormData(formEle)
-        fetch("https://script.google.com/macros/s/AKfycbwj0BLE5B7AnbIuOaYJ3UV8Ka9EqiihtALyAN8wHntUFbfnIDT8mJkfCpSrWcmYW_78Kg/exec",{
+        fetch("https://script.google.com/macros/s/AKfycbzbG1KZ7neJnRqNfcSgZy6rwGKlctqVoNL5NAWapEVEIsdO9TQ5i78-h_xrgOncqkxT/exec",{
           method:'POST',
           body:formData
         })
           }
+const submitHandler =(event)=>{
+Submit(event)
+
+alert('Form Submitted')
+}
 
 
   return (
     <div className='reg-main-body'>
       <h5 className='text-center reg-body-title'>Admission Form</h5>
-      <form className='form' onSubmit={(event)=>Submit(event)}>
+      <form className='form' onSubmit={submitHandler}>
 
      <h5 className='section-title'>Student Details</h5> <hr />
 
@@ -175,6 +180,9 @@ const Registration = () => {
 <input name='Whyjoin' className='form-control' type="text" />
 </div>
 
+
+<input name='ProfilePhoto' type="file" />
+<input name='Signiture' type="file" />
 
 <input className='btn btn-success w-100' type="submit" />
 
