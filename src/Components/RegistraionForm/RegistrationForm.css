@@ -1,0 +1,23 @@
+.reg-main-body{
+    padding: 10px;
+   
+}
+.reg-body-title{
+    font-family: "Pacifico", cursive;
+}
+.form{
+  border: 1px solid rgba(187, 187, 187, 0.215);
+  -webkit-box-shadow: 5px -4px 14px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px -4px 14px -8px rgba(0,0,0,0.75);
+box-shadow: 5px -4px 14px -8px rgba(0,0,0,0.75);
+   padding: 10px;
+   border-radius: 20px;
+}
+.section-title{
+    font-size: 20px;
+}
+.reg-input-fields{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
