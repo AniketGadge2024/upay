@@ -1,5 +1,10 @@
+.contact-outer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 .contact-div{
-width: 80%;
 border-radius: 10px;
 margin-bottom: 10px;
 background-color: white;
@@ -9,7 +14,6 @@ padding: 0;
 box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
 }
 .contact-div-map{
-    width: 80%;
     height: 300px;
     margin-bottom: 10px;
     padding: 0;
@@ -31,3 +35,26 @@ box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
    margin-bottom: 5px;
    margin-top: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+/* ___________________________________________________________
+ */
+
+ .reg-form-body{
+    font-size: 13px;
+    padding: 10px;
+    border: 1px solid rgba(92, 92, 92, 0.108);
+    -webkit-box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
+box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
+    margin-top: 30px;
+    border-radius: 20px;
+ }

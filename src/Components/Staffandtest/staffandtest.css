@@ -1,5 +1,6 @@
 .staff{
-    min-height: 150px;
+    min-height: 120px;
+    padding: 10px;
    display: flex;
    justify-content: start;
    align-items: center;
@@ -32,7 +33,7 @@ box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
     font-size: 13px;
     padding:4px;
     width:220px;
-    height: 100px;
+   
     border-radius: 20px;
     margin-left: 10px;
     border: 1px solid rgba(128, 128, 128, 0.292);
@@ -40,8 +41,15 @@ box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
     box-shadow: 7px 8px 10px -13px rgba(0,0,0,0.75);
 }
+
+.staff-div-body{
+    margin-bottom: 20px;
+}
+
+/* ____________________________________________________________________________________________________ */
+
 .test-main-div{
-   min-height: 600px;
+   min-height: 450px;
    margin: 20px;
    border-radius: 10px;
    background-color: white;
@@ -72,4 +80,27 @@ box-shadow: 1px 5px 21px -13px rgba(0,0,0,0.75);
 }
 .testimonials-details{
     font-size: 13px;
+}
+
+
+
+
+
+
+/* _________________________________ */
+.write-review-div{
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 10px;
+}
+.write-review-sub{
+   min-width: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.319);
+    border-radius: 20px;
+    margin-right: 10px;
 }

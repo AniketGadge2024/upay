@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import Cources from './Components/cources'
-import Contact from './Components/Contact'
-import Staffandtest from './Components/staffandtest'
+
+import Staffandtest from './Components/Staffandtest/staffandtest'
 import { useNavigate } from "react-router-dom";
+import Staff from './Components/Staffandtest/staff'
+import Contact from './Components/ContactPage/Contact';
 const MainPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
@@ -37,17 +39,17 @@ const MainPage = () => {
 <p className='text-center para-title'>Process of Man-Making</p>
     
     <div className='w-100 d-flex justify-content-evenly align-items-center '>
-    <button className='btn reg-button' onClick={()=>navigate('/Registration')}>Register</button>
-    <div className='watch-video btn' onClick={()=>navigate('./Pics')} > <i class="fa-solid fa-circle-play fa-lg" style={{color: "#74C0FC"}}></i>Watch video</div>
+    {/* <button className='btn reg-button' onClick={()=>navigate('/Registration')}>Admission Form</button>
+    <div className='watch-video btn' onClick={()=>navigate('./Pics')} > <i class="fa-solid fa-circle-play fa-lg" style={{color: "#74C0FC"}}></i>Watch video</div> */}
     </div>
     </div>
       </div>
 
 
 
-      
+      <Staffandtest></Staffandtest>
       <Cources></Cources>
-<Staffandtest></Staffandtest>
+      <Staff></Staff>
       <Contact></Contact>
 
 

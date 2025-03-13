@@ -26,7 +26,7 @@ const Cources = () => {
   return (
     <div >
       
-      <h6 className='text-center mt-4'>What we Provide</h6>
+      <h6 className='text-center mt-4 fs-7'> <strong>What we Provide</strong></h6>
       
      <div className='cource-div d-flex'>
       <button className='btn cource-detail-logo' onClick={toggleDetails}><i class="fa-regular fa-bookmark" style={{color: "#ffffff"}}></i></button>

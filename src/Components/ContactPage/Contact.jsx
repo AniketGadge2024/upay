@@ -1,8 +1,13 @@
 import React from 'react'
 import './contact.css'
+import { useNavigate } from 'react-router-dom'
 const Contact = () => {
+
+  const navigate = useNavigate();
+
   return (
-    <div  className="d-flex flex-column justify-content-center align-items-center vh-100" >
+    <div className='contact-outer-div'>
+      <div className='contact-inner-div'>
 
       <h4 className='d-flex justify-content-center '>Contact</h4>
       <p className='text-warp opacity-75 fs-6 text-center mb-5 '>Unperturb_Advancement Ganpati Nagar Godhani Road Zingabai Takli Nagpur 440030
@@ -21,9 +26,16 @@ const Contact = () => {
       </div>
 
       <div className='contact-div-map'>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14878.993101443384!2d79.05094615425679!3d21.202156493180926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1333ebb3b5f%3A0x65ad062cfb16051c!2sUnperturb_Advancement!5e0!3m2!1sen!2sin!4v1740739139551!5m2!1sen!2sin" width="100%" height="100%" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe className='rounded-4' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14878.993101443384!2d79.05094615425679!3d21.202156493180926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1333ebb3b5f%3A0x65ad062cfb16051c!2sUnperturb_Advancement!5e0!3m2!1sen!2sin!4v1740739139551!5m2!1sen!2sin" width="100%" height="100%" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <button className='btn contact-reg'>Register</button>
+
+
+<div className='reg-form-body'>
+      <span className='text-danger'> <strong>Click here to access the Admission Form ⬇️</strong> </span>
+      <button onClick={()=>navigate('/Registration')} className='btn contact-reg w-100 mt-3'>Register</button>
+      </div>
+
+</div>
     </div>
   )
 }
