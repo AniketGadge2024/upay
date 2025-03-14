@@ -40,10 +40,7 @@ setExpanded(!expanded)
        <input name='Name' className='form-control input-registration' type="text" required />
        </div>
 
-        <div className='reg-input-fields'>
-       <label className='input-label' htmlFor="StudentMobile">Student Mobile Number</label>
-       <input name='StudentMobile' className='form-control input-registration' type="number" required/>
-       </div>
+
 
         <div className='reg-input-fields'>
        <label className='input-label' htmlFor="Email">Student Email.ID</label>
@@ -58,7 +55,6 @@ setExpanded(!expanded)
        <div className='d-flex w-75 justify-content-evenly'>
        <input name='Gender' className='form-check-input' type="radio" value={'Male'} />Male
        <input name='Gender' className='form-check-input' type="radio" value={'Male'} />Female
-       <input name='Gender' className='form-check-input' type="radio" value={'Prefer Not to Say'} />Prefer Not to Say
        </div>
 
        </div>
@@ -99,6 +95,11 @@ setExpanded(!expanded)
        </div>
 
        <div className='reg-input-fields'>
+       <label htmlFor="PastInstitute">Past Institute(If Any)</label>
+       <input name='PastInstitute' className='form-control' type="text" />
+       </div>
+
+       <div className='reg-input-fields'>
        <label htmlFor="AcademicPerformance">Academic Performance (Last Exam Percentage/Grade)</label>
        <input name='AcademicPerformance' className='form-control' type="text" />
        </div>
@@ -123,13 +124,18 @@ setExpanded(!expanded)
        </div>
 
        <div className='reg-input-fields'>
-       <label htmlFor="PrimaryContact">Primary Contact Number (WhatsApp Number)</label>
+       <label htmlFor="PrimaryContact">Primary Contact Number</label>
        <input name='PrimaryContact' className='form-control' type="number" required/>
        </div>
 
        <div className='reg-input-fields'>
        <label htmlFor="AlternateContact">Alternate Contact Number</label>
        <input name='AlternateContact' className='form-control' type="number" />
+       </div>
+
+       <div className='reg-input-fields'>
+       <label htmlFor="WhatsappNumber">Whatsapp Number</label>
+       <input name='WhatsappNumber' className='form-control' type="number" />
        </div>
 
        <div className='reg-input-fields '>
@@ -168,9 +174,57 @@ setExpanded(!expanded)
 </div>
 
 <div className='reg-input-fields'>
-<label htmlFor="Favoritesubjects">What are your favorite subjects and why?</label>
-<input name='Favoritesubjects' className='form-control' type="text" required/>
+<label htmlFor="">How would you rate your interest and confidence level in the following subjects?</label>
+
+<div className='d-flex justify-content-center align-items-center'>
+<label className='w-50' htmlFor="Math">Mathematics</label> 
+<select className='form-select' name="Math" >
+<option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐">⭐⭐⭐</option>
+<option value="⭐⭐">⭐⭐</option>
+<option value="⭐">⭐</option>
+</select>
 </div>
+
+<div className='d-flex justify-content-center align-items-center'>
+<label className='w-50' htmlFor="Science">Science</label> 
+<select className='form-select' name="Science" >
+<option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐">⭐⭐⭐</option>
+<option value="⭐⭐">⭐⭐</option>
+<option value="⭐">⭐</option>
+</select>
+</div>
+
+<div className='d-flex justify-content-center align-items-center'>
+<label className='w-50' htmlFor="SST">SST</label> 
+<select className='form-select' name="SST" >
+<option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐">⭐⭐⭐</option>
+<option value="⭐⭐">⭐⭐</option>
+<option value="⭐">⭐</option>
+</select>
+</div>
+
+<div className='d-flex justify-content-center align-items-center'>
+<label className='w-50' htmlFor="Language">Language</label> 
+<select className='form-select' name="Language" >
+<option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐">⭐⭐⭐</option>
+<option value="⭐⭐">⭐⭐</option>
+<option value="⭐">⭐</option>
+</select>
+</div>
+
+
+
+</div>
+
+
 
 <div className='reg-input-fields'>
 <label htmlFor="Careergoals">What are your academic and career goals?</label>
@@ -178,7 +232,12 @@ setExpanded(!expanded)
 </div>
 
 <div className='reg-input-fields'>
-<label htmlFor="Extracurricularinterests">What are your hobbies and extracurricular interests?</label>
+<label htmlFor="Hobbies">What are your hobbies?</label>
+<input name='Hobbies' className='form-control' type="text" required/>
+</div>
+
+<div className='reg-input-fields'>
+<label htmlFor="Extracurricularinterests">What are your extracurricular interests?</label>
 <input name='Extracurricularinterests' className='form-control' type="text" required/>
 </div>
 
